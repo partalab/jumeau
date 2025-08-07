@@ -21,26 +21,31 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: white;
-      border-bottom: 1px solid #eee;
+      background-color: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
     }
     .logo img {
       height: 40px;
     }
     nav a {
-      margin: 0 15px;
+      margin-left: 20px;
       text-decoration: none;
-      color: #000;
+      color: #fff;
       font-weight: 500;
     }
     .hero {
       background: url('assets/index.png') center/cover no-repeat;
-      height: 400px;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       text-align: center;
+      position: relative;
     }
     .hero img {
       height: 300px;
@@ -105,7 +110,7 @@
       <a href="#">Perfume</a>
       <a href="#">Skin & Body</a>
       <a href="#">Fashion</a>
-      <a href="#">About</a>
+      <a href="about.html">About</a>
       <a href="#">IDN</a>
       <a href="#">EN</a>
       <a href="#">Search</a>
@@ -113,7 +118,6 @@
   </header>
 
   <section class="hero">
-    <img src="" alt="Salty Perfume" />
     <div class="shop-links">
       <button>Tokopedia</button>
       <button>Shopee</button>

@@ -95,6 +95,12 @@
       font-weight: 600;
       margin-top: 5px;
     }
+    .editorial-collection {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      padding: 40px;
+    }
     footer {
       padding: 40px;
       background: #f5f5f5;
@@ -155,24 +161,16 @@
       <p class="price-old"><del>Rp 599,000</del></p>
       <p class="price-new"><b>Rp 399,000</b></p>
       </div>
-  </section>
-  <section className="products grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-12 py-10">
-        <div className="product-card relative">
-          <img src="assets/editorial_vanille_edp.png"
-            alt="Vanille EDP Detail"
-            className="w-full h-auto object-cover"
-          />
-          <p className="text-sm mt-2 text-left">EDP COLLECTION ↗</p>
-        </div>
-        <div className="product-card relative">
-          <img src="assets/editorial_salty_edt.png"
-            alt="Salty EDT Detail"
-            className="w-full h-auto object-cover"
-          />
-          <p className="text-sm mt-2 text-left">EDT COLLECTION ↗</p>
-        </div>
-      </section>
-    </div>
+    <section class="editorial-collection">
+      <div class="product-card">
+        <img src="assets/editorial_vanille_edt.png" alt="Vanille EDP Detail" />
+        <p>EDP COLLECTION ↗</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/editorial_salty_edp.png" alt="Salty EDT Detail" />
+        <p>EDT COLLECTION ↗</p>
+      </div>
+    </section>
   <footer>
     <div class="column">
       Contact us at: <br />cs@jumeauscent.com

@@ -135,7 +135,7 @@
       <img src="assets/edp_salty.png" alt="Salty EDP" />
       <h3>SALTY EDP</h3>
       <p>Fig & Ozone Accord | Marine Accord | Ambergriss & Driftwood Accord</p>
-      <p class="ml">50ML</p>
+      <p class="ml"><b>50ML</b></p>
       <p class="price-old"><del>Rp 599,000</del></p>
       <p class="price-new"><b>Rp 399,000</b></p>
     </div>
@@ -143,7 +143,7 @@
       <img src="assets/edt_salty.png" alt="Salty EDT" />
       <h3>SALTY EDT</h3>
       <p>Fig & Ozone Accord | Marine Accord | Ambergriss & Driftwood Accord</p>
-      <p class="ml">50ML</p>
+      <p class="ml"><b>50ML</b></p>
       <p class="price-old"><del>Rp 299,000</del></p>
       <p class="price-new"><b>Rp 199,000</b></p>
     </div>
@@ -151,22 +151,28 @@
       <img src="assets/edp_vanille.png" alt="Vanille EDP" />
       <h3>VANILLE EDP</h3>
       <p>Pink Grapefruit & Plum | Iris & Bulgarian Rose | Vanilla & Amber Accord</p>
-      <p class="ml">50ML</p>
+      <p class="ml"><b>50ML</b></p>
       <p class="price-old"><del>Rp 599,000</del></p>
       <p class="price-new"><b>Rp 399,000</b></p>
-    </div>
+      </div>
   </section>
-
-  <div class="section-title">EDP COLLECTION</div>
-  <section class="products">
-    <div class="product-card">
-      <img src="assets/editorial_vanille_edt.png" alt="Vanille EDP Detail" />
+  <section className="products grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-12 py-10">
+        <div className="product-card relative">
+          <img src="assets/editorial_vanille_edp.png"
+            alt="Vanille EDP Detail"
+            className="w-full h-auto object-cover"
+          />
+          <p className="text-sm mt-2 text-left">EDP COLLECTION ↗</p>
+        </div>
+        <div className="product-card relative">
+          <img src="assets/editorial_salty_edt.png"
+            alt="Salty EDT Detail"
+            className="w-full h-auto object-cover"
+          />
+          <p className="text-sm mt-2 text-left">EDT COLLECTION ↗</p>
+        </div>
+      </section>
     </div>
-    <div class="product-card">
-      <img src="assets/editorial_salty_edp.png" alt="Salty EDT Detail" />
-    </div>
-  </section>
-
   <footer>
     <div class="column">
       Contact us at: <br />cs@jumeauscent.com

@@ -94,12 +94,24 @@
     .product-card .price {
       font-weight: 600;
       margin-top: 5px;
-    }
     .editorial-collection {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 40px;
       padding: 40px;
+    }
+    .editorial-card {
+      text-align: left;
+    }
+    .editorial-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .editorial-card p {
+      font-size: 0.9rem;
+      font-weight: 500;
     }
     footer {
       padding: 40px;
@@ -161,16 +173,18 @@
       <p class="price-old"><del>Rp 599,000</del></p>
       <p class="price-new"><b>Rp 399,000</b></p>
       </div>
+      <div>
     <section class="editorial-collection">
-      <div class="product-card">
-        <img src="assets/editorial_vanille_edt.png" alt="Vanille EDP Detail" />
-        <p>EDP COLLECTION ↗</p>
-      </div>
-      <div class="product-card">
-        <img src="assets/editorial_salty_edp.png" alt="Salty EDT Detail" />
-        <p>EDT COLLECTION ↗</p>
+    <div class="editorial-card">
+    <img src="assets/editorial_vanille_edt.png" alt="Vanille EDP Detail" />
+      <p>EDP COLLECTION ↗</p>
+    </div>
+    <div class="editorial-card">
+    <img src="assets/editorial_salty_edp.png" alt="Salty EDT Detail" />
+      <p>EDT COLLECTION ↗</p>
       </div>
     </section>
+      </div>
   <footer>
     <div class="column">
       Contact us at: <br />cs@jumeauscent.com

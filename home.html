@@ -1,154 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JUMEAU</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #fff;
+      color: #000;
+    }
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('your-hero-image.jpg') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero img {
+      height: 300px;
+      object-fit: contain;
+    }
+    .shop-links button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: 1px solid #000;
+      background: transparent;
+      cursor: pointer;
+    }
+    .section-title {
+      margin: 40px;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      padding: 0 40px 40px;
+    }
+    .product-card {
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .product-card h3 {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+    .product-card p {
+      font-size: 0.9rem;
+      color: gray;
+    }
+    .product-card .price {
+      font-weight: 600;
+      margin-top: 5px;
+    }
+    footer {
+      padding: 40px;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+    footer .column {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-<header class="navbar">
-  <div class="left-section">
-    <div class="logo">
-      <a href="index.html"><img src="img/jumeau_logo.png" alt="JUMEAU Logo" /></a>
-    </div>
-  </div>
-
-
-  <nav class="nav-links" id="navMenu">
-    <div class="dropdown">
-      <span>PERFUME</span>
-      <div class="dropdown-menu">
-        <a href="classic.html">Classic</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <span>BODY</span>
-      <div class="dropdown-menu">
-        <a href="">Coming Soon</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <span>FASHION</span>
-      <div class="dropdown-menu">
-        <a href="">Coming Soon</a>
-      </div>
-    </div>
-    <a href="about.html"><div class="dropdown">ABOUT</div></a>
-  </nav>
-
-  <div class="right-section">
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Type to start searching..." />
-    </div>
-    
-  <div class="hamburger" id="hamburger">&#9776;</div>
-  </div>
-</header>
-
-
-
+  <header>
+    <div class="logo">JUMEAU</div>
+    <nav>
+      <a href="#">Perfume</a>
+      <a href="#">Skin & Body</a>
+      <a href="#">Fashion</a>
+      <a href="#">About</a>
+      <a href="#">FAQ</a>
+      <a href="#">IDN</a>
+      <a href="#">EN</a>
+      <a href="#">Search</a>
+    </nav>
+  </header>
 
   <section class="hero">
-    <div class="shop-now">
-      <p>SHOP NOW AT</p>
- <div class="shop-buttons">
-  <a href="https://shopee.co.id/jumeauscent" class="shop-btn shopee">
-    <img src="img/shopee_logo_white.png" alt="Shopee" class="shop-logo" />
-  </a>
-  <a href="http://www.tokopedia.com/jumeau-scent" class="shop-btn tokopedia">
-    <img src="img/tokped_logo_white.png" alt="Tokopedia" class="shop-logog" />
-  </a>
-</div>
+    <img src="index.png" alt="Salty Perfume" />
+    <div class="shop-links">
+      <button>Tokopedia</button>
+      <button>Shopee</button>
     </div>
   </section>
-  <section class="product-list">
-  <div class="product-card">
-    <a href="edp_salty.html"><img src="img/edp_salty.png" alt="SALTY EDP" class="product-image" /></a>
-    <h3>SALTY EDP</h3>
-    <p class="notes">Fig & Ozone Accord | Marine Accord | Ambergris & Driftwood Accord</p>
-    <p class="ml">50ML</p>
-    <p class="price-old">Rp 599,000</p>
-    <p class="price-new">Rp 399,000</p>
-  </div>
 
-  <div class="product-card">
-    <a href="edt_salty.html"><img src="img/edt_salty.png" alt="SALTY EDT" class="product-image" /></a>
-    <h3>SALTY EDT</h3>
-    <p class="notes">Fig & Ozone Accord | Marine Accord | Ambergris & Driftwood Accord</p>
-    <p class="ml">50ML</p>
-    <p class="price-old">Rp 299,000</p>
-    <p class="price-new">Rp 199,000</p>
-  </div>
-
-  <div class="product-card">
-    <a href="edp_vanille.html"><img src="img/edp_vanille.png" alt="VANILLE EDP" class="product-image" /></a>
-    <h3>VANILLE EDP</h3>
-    <p class="notes">Pink Grapefruit & Plum | Iris & Bulgarian Rose | Vanilla & Amber Accord</p>
-    <p class="ml">50ML</p>
-    <p class="price-old">Rp 599,000</p>
-    <p class="price-new">Rp 399,000</p>
-  </div>
-</section>
-
-<section class="product-images">
-  <a href="edt_vanille.html"><img src="img/editorial_vanille_edt.png" alt="Image 1" class="extra-image" /></a>
-  <a href="edp_salty.html"><img src="img/editorial_salty_edp.png" alt="Image 2" class="extra-image" /></a>
-</section>
-
-<footer class="minimal-footer">
-  <div class="footer-top">
-    <div class="footer-column">
-      <h4>Contact Us </h4>
-      <p>cs@jumeauscent.com</p>
+  <div class="section-title">CLASSIC COLLECTION</div>
+  <section class="products">
+    <div class="product-card">
+      <img src="edp_salty.png" alt="Salty EDP" />
+      <h3>SALTY EDP</h3>
+      <p>Eau De Parfum</p>
+      <div class="price">Rp 399.000</div>
     </div>
-    <div class="footer-column">
-      <h4>Shop</h4>
-      <ul>
-        <li><a href="https://shopee.co.id/jumeauscent">Shopee</a></li>
-        <li><a href="http://www.tokopedia.com/jumeau-scent">Tokopedia</a></li>
-      </ul>
+    <div class="product-card">
+      <img src="edt_salty.png" alt="Salty EDT" />
+      <h3>SALTY EDT</h3>
+      <p>Eau De Toilette</p>
+      <div class="price">Rp 199.000</div>
     </div>
-    <div class="footer-column">
-      <h4>Social Media</h4>
-      <ul>
-        <li><a href="https://www.instagram.com/jumeauscent">Instagram</a></li>
-        <li><a href="https://www.tiktok.com/@jumeauscent?_t=zs-8yiqbc1agra&_r=1">Tiktok</a></li>
-      </ul>
+    <div class="product-card">
+      <img src="edp_vanille.png" alt="Vanille EDP" />
+      <h3>VANILLE EDP</h3>
+      <p>Eau De Parfum</p>
+      <div class="price">Rp 399.000</div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p><i class="fas fa-copyright"></i>© 2025 JUMEAU</p>
-  </div>
-</footer>
+  </section>
+
+  <div class="section-title">EDP COLLECTION</div>
+  <section class="products">
+    <div class="product-card">
+      <img src="editorial_vanille_edp.png" alt="Vanille EDP Detail" />
+    </div>
+    <div class="product-card">
+      <img src="editorial_salty_edt.png" alt="Salty EDT Detail" />
+    </div>
+  </section>
+
+  <footer>
+    <div class="column">
+      Contact us at: <br />cs@jumeauscent.com
+    </div>
+    <div class="column">
+      Shop<br />Shopee<br />Tokopedia
+    </div>
+    <div class="column">
+      Social Media<br />Instagram<br />TikTok
+    </div>
+  </footer>
 </body>
-<script>
-  const hamburger = document.getElementById("hamburger");
-  const navMenu = document.getElementById("navMenu");
-
-  hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-    hamburger.classList.toggle("active");
-  });
-</script>
-
-<script>
-  const searchInput = document.getElementById("searchInput");
-  const productCards = document.querySelectorAll(".product-card");
-
-  searchInput.addEventListener("input", function () {
-    const query = this.value.toLowerCase();
-
-    productCards.forEach(card => {
-      const productName = card.querySelector("h3").textContent.toLowerCase();
-      if (productName.includes(query)) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    });
-  });
-</script>
-
-
 </html>

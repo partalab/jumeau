@@ -43,6 +43,32 @@
       font-weight: 500;
       text-transform: uppercase;
     }
+    .search-form {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 5px 10px;
+    }
+    .search-form input {
+      border: none;
+      background: transparent;
+      color: #fff;
+      padding: 5px;
+      outline: none;
+      font-size: 0.9rem;
+    }
+    .search-form button {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .search-form input::placeholder {
+      color: #fff;
+      opacity: 0.8;
+    }
     .hero {
       background: url('assets/index.png') center/cover no-repeat;
       height: 100vh;
@@ -141,13 +167,16 @@
     <div class="logo"><a href="index.html"><img src="assets/jumeau_logo.png" alt="Jumeau Home Logo"></a></div>
     <nav>
       <a href="#">Perfume</a>
-      <a href="#">Body</a>
+      <a href="#">Face & Body</a>
       <a href="#">Fashion</a>
       <a href="about.html">About</a>
-      <a href="#">ENG</a>
-      <a href="#">IDN</a>
-      <a href="#">Search</a>
+      <a href="index.html">ENG</a>
+      <a href="index_idn.html">IDN</a>
     </nav>
+      <form class="search-form" action="search.html" method="get">
+        <input type="text" name="q" placeholder="Search..." />
+        <button type="submit">🔍</button>
+      </form>
   </header>
 
   <section class="hero">

@@ -78,26 +78,36 @@
       flex-direction: column;
       text-align: center;
     }
-    .shop-button {
-      display: inline-block;
-      background-color: #000;
+      .shop-now {
+      text-align: center;
       color: #fff;
-      padding: 4px 8px; /* even smaller padding */
-      font-size: 0.8rem; /* smaller text size */
+      margin-top: 20px;
+    }
+    .shop-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .shop-links a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      padding: 8px 16px;
       text-decoration: none;
-      border-radius: 2px; /* sharper, less rounded corners */
-      margin-left: 10px; /* left spacing */
-      line-height: 1.2; /* keeps shape compact */
+      color: #fff;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
     }
-    .header-buttons {
-      display: flex;
-      justify-content: flex-start; /* align left */
-      align-items: center;
+    .shop-links a:hover {
+      background: rgba(255, 255, 255, 0.35);
     }
-    .header-buttons {
-      display: flex;
-      justify-content: flex-start; /* align left */
-      align-items: center;
+    .shop-links img {
+      height: 20px;
+      width: auto;
     }
     .section-title {
       margin: 60px 40px 20px;
@@ -188,23 +198,21 @@
       </form>
   </header>
 
-  <section class="hero">
-    <div class="shop-now">
-      <p>SHOP NOW AT</p>
-    <div class="shop-button">
-      <button>
-          <a href="https://shopee.co.id/jumeauscent">
-          <img src="assets/shopee_logo_white.png" alt="Shopee"/>
-          </a>
-      </button>
-      <button>
-          <a href="https://www.tokopedia.com/jumeau-scent" class="shop-btn tokopedia">
-          <img src="assets/tokped_logo_white.png" alt="Tokopedia" class="shop-logo" />
-          </a>
-      </button>
+<section class="hero">
+  <div class="shop-now">
+    <p>SHOP NOW AT</p>
+    <div class="shop-links">
+      <a href="https://shopee.co.id/jumeauscent">
+        <img src="assets/shopee_logo_white.png" alt="Shopee" />
+        Shopee
+      </a>
+      <a href="https://www.tokopedia.com/jumeau-scent">
+        <img src="assets/tokped_logo_white.png" alt="Tokopedia" />
+        Tokopedia
+      </a>
     </div>
-  </section>
-
+  </div>
+</section>
   <div class="section-title">Classic Collection</div>
   <section class="products">
     <div class="product-card">
